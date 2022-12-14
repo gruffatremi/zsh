@@ -25,14 +25,15 @@ UTILS
 echo "##############################################"
 echo "Download fontfiles"
 echo "##############################################"
-wget https://github.com/romkatv/powerlevel10k-media/raw/master/MesloLGS%20NF%20Regular.ttf -P /tmp
-wget https://github.com/romkatv/powerlevel10k-media/raw/master/MesloLGS%20NF%20Bold.ttf -P /tmp
-wget https://github.com/romkatv/powerlevel10k-media/raw/master/MesloLGS%20NF%20Italic.ttf -P /tmp
-wget https://github.com/romkatv/powerlevel10k-media/raw/master/MesloLGS%20NF%20Bold%20Italic.ttf -P /tmp
+mkdir /tmp/fonts
+wget https://github.com/romkatv/powerlevel10k-media/raw/master/MesloLGS%20NF%20Regular.ttf -P /tmp/fonts
+wget https://github.com/romkatv/powerlevel10k-media/raw/master/MesloLGS%20NF%20Bold.ttf -P /tmp/fonts
+wget https://github.com/romkatv/powerlevel10k-media/raw/master/MesloLGS%20NF%20Italic.ttf -P /tmp/fonts
+wget https://github.com/romkatv/powerlevel10k-media/raw/master/MesloLGS%20NF%20Bold%20Italic.ttf -P /tmp/fonts
 echo "##############################################"
 echo "Installing the font locally"
 echo "##############################################"
-fc-cache -f -v /tmp
+fc-cache -f -v /tmp/fonts
 echo "##############################################"
 echo "Updating runcom files"
 echo "##############################################"
