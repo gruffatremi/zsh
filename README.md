@@ -1,3 +1,5 @@
+## Ubuntu / Debian Only ! 
+
 # zsh
 Auto-ZSH config for new VM
 
