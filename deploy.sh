@@ -41,5 +41,5 @@ echo "\ncd ~" >> ~/.bashrc
 echo "\nbash -c zsh" >> ~/.bashrc
 
 echo "##############################################"
-echo "!!!!Please open a new terminal session to finish the setup"
+echo "Type zsh to configure it and you can start using your terminal like a pro ;)"
 echo "##############################################"
