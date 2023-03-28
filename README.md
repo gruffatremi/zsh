@@ -12,7 +12,7 @@ sh -c "$(curl -fsSL https://raw.githubusercontent.com/gruffatremi/zsh/main/deplo
 
 # Fedora 
 ```bash
-sh -c "$(curl -fsSL https://raw.githubusercontent.com/gruffatremi/zsh/main/deploy.sh)"
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/gruffatremi/zsh/main/deploy-fedora.sh)"
 ```
 
 Then you press zsh to enter new shell and you can then configure it
