@@ -33,6 +33,8 @@ wget https://github.com/romkatv/powerlevel10k-media/raw/master/MesloLGS%20NF%20B
 echo "##############################################"
 echo "Installing the font locally"
 echo "##############################################"
+echo "zsh" >> ~/.bashrc
+
 fc-cache -f -v /tmp/fonts
 
 echo "##############################################"
