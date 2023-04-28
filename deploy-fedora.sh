@@ -34,11 +34,6 @@ echo "##############################################"
 echo "Installing the font locally"
 echo "##############################################"
 fc-cache -f -v /tmp/fonts
-echo "##############################################"
-echo "Updating runcom files"
-echo "##############################################"
-echo "\ncd ~" >> ~/.bashrc
-echo "\nbash -c zsh" >> ~/.bashrc
 
 echo "##############################################"
 echo "Type zsh to configure it and you can start using your terminal like a pro ;)"
