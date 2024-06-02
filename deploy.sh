@@ -1,7 +1,9 @@
 #!/usr/bin/env bash
 
 echo "Installing apt libraries"
-sudo apt update && sudo apt install -y zsh git wget curl fontconfig && touch ~/.zshrc
+sudo apt update && sudo apt install -y zsh git wget curl fontconfig
+echo "create zshrc file"
+touch ~/.zshrc
 
 echo "##############################################"
 echo "Install Oh My Zsh"
