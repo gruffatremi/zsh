@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
 echo "Installing apt libraries"
-sudo apt update && sudo apt install -y zsh git wget curl fontconfig
+sudo apt update && sudo apt install -y zsh git wget curl fontconfig && touch ~/.zshrc
 
 echo "##############################################"
 echo "Install Oh My Zsh"
@@ -17,7 +17,7 @@ zsh <<UTILS
     git clone https://github.com/romkatv/powerlevel10k.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/themes/powerlevel10k
     git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting
     git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
-    touch ~/.zshrc
+    
     sed -i -e 's/^ZSH_THEME=.*$/ZSH_THEME="powerlevel10k\/powerlevel10k"/' ~/.zshrc
     sed -i -e 's/^plugins=.*$/plugins=( git zsh-syntax-highlighting zsh-autosuggestions terraform kubectl )/' ~/.zshrc
 UTILS
